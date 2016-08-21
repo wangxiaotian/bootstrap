@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>弹出框</title>
-	<link rel="stylesheet" href="../reference/bootstrap.css">
-	<script src = "../reference/bootstrap.js"></script>
+    <meta charset="UTF-8">
+    <title>弹出框</title>
+    <link rel="stylesheet" href="../reference/bootstrap.css">
+    <script src="../reference/jquery-1.12.2.js"></script>
+    <script src="../reference/bootstrap.js"></script>
 </head>
+
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<h3>弹出框</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<button type = "button" class = "btn btn-default" title = "Popover title" data-container = "body" data-toggle = "popover" data-placement = "bottom" data-content = "左侧的Popover中的一些内容">按钮</button>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h3>弹出框</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button type="button" class="btn btn-default" title="Popover title" data-container="body" data-toggle="popover" data-placement="bottom" data-content="左侧的Popover中的一些内容">按钮</button>
+                <button type="button" class="btn btn-warning" title="Popover title" data-container="body" data-toggle="popover" data-placement="right" data-content="右侧的 Popover 中的一些内容">
+                    右侧的 Popover
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(function() {
+        $("[data-toggle = 'popover']").popover();
+    })
+    </script>
 </body>
+
 </html>

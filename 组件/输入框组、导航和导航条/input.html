@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>输入框组、导航和导航条</title>
+    <link rel="stylesheet" href="../../reference/bootstrap.css">
+    <script src="../../reference/jquery-1.12.2.js"></script>
+    <script src="../../reference/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="用户名">
+                    <span class="input-group-addon">/ 元</span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group input-group-sm">
+            <label for="" class="input-group-addon">@</label>
+            <input type="text" class="form-control">
+            <label for="" class="input-group-addon">/ 件</label>
+        </div>
+        <!-- 带按钮的输入框 -->
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="input-group">
+                    <span class="input-group-btn">
+					<button class = "btn btn-default">go</button>
+				</span>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+        </div>
+        <!-- 带下拉菜单的输入框 -->
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button data-toggle="dropdown" class="btn btn-default dropdown-toggle">Action<span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">苹果</a></li>
+                            <li><a href="#">香蕉</a></li>
+                            <li><a href="#">橘子</a></li>
+                            <li><a href="#">番茄</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control" placeholder="请先选择水果">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="input-group">
+                <label for="" class="input-group-addon">@</label>
+                <input type="text" class="form-control">
+                <label for="" class="input-group-addon">/ 件</label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

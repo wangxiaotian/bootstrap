@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>验证table-cell</title>
+    <style>
+    .test {
+        display: table-cell;
+    }
+    
+    .caret {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 2px;
+        vertical-align: middle;
+        border-top: 5px solid;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+    }
+    
+    .caret1 {
+        width: 0;
+        height: 0;
+        border-top: 40px solid green;
+        border-right: 40px solid transparent;
+        border-left: 40px solid transparent;
+    }
+    
+    .caret2 {
+        width: 0;
+        height: 0;
+        border-top: 40px solid green;
+        border-right: 40px solid #ff0000;
+        border-left: 40px solid #ff0000;
+        border-bottom: 40px solid green;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 真的可以啊，不用嵌套table -->
+    <div class="test">你好</div>
+    <div class="test">她好</div>
+    <div class="test">我好</div>
+    <div class="caret"></div>
+    <div class="caret1"></div>
+    <div class="caret2"></div>
+    <div role = "button">role = "button"</div>
+    <div><input type="text"><button>点击</button></div>
+</body>
+
+</html>
