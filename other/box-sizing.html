@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>box-sizing属性</title>
+    <style>
+    .table {
+        border-collapse: separate;
+        border-spacing: 20px;
+    }
+    
+    .test1 {
+        box-sizing: border-box;
+    }
+    
+    .test1,
+    .test2 {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <h3>定义两个盒子来比较一下</h3>
+    <p>有box-sizing:border-box属性的元素，其宽度和高度只与其宽高有关 ，增加内边距与边框不会改变其宽度和高度
+    </p>
+    <div class="test1">first</div>
+    <br>
+    <div class="test2">two</div>
+    
+</body>
+
+</html>
