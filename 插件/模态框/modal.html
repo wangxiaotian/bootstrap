@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>模态窗</title>
+    <link rel="stylesheet" href="../../reference/bootstrap.css">
+    <script src="../../reference/jquery-1.12.2.js"></script>
+    <script src="../../reference/bootstrap.js"></script>
+</head>
+
+<body>
+    <h2>创建模态框</h2>
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">开始演示模态框</button>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+                </div>
+                <div class="modal-body">在这里添加一些文本
+				<button class="btn btn-primary" data-dismiss = "modal" data-toggle = "modal" data-target = "#secondModal">下一个模态窗</button>
+				
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">提交更改</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+
+    <div class="modal fade" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+                </div>
+                <div class="modal-body">
+				确认一下是不是第二个模态窗
+				
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary">提交更改</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal -->
+    </div>
+</body>
+
+</html>
